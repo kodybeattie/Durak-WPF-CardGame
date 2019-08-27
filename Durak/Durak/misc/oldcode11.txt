@@ -1,0 +1,55 @@
+if (m_Players.Count > m_BtnDoneCounter)
+            {
+                //continue with next player...
+                //eg. Turn myTurn = m_Rounds[m_Rounds.Count - 1].GetCurrentTurn();
+                //eg. PlayNextPlayer(myTurn++);
+                //must increment current turn counter
+                
+                Turn curTurn = m_Rounds[m_Rounds.Count - 1].GetCurrentTurn();
+                Turn prevTurn = (Turn)curTurn.Clone();
+                prevTurn--;
+                
+                Player pc = curTurn.GetPlayer();
+                if (curTurn.isDefending())
+                {
+                    Hand defenseHand = pc.Defend(prevTurn.GetHand());
+                    curTurn.Defend(defenseHand);
+                    foreach (PlayingCard card in defenseHand)
+                    {
+                        m_Gg.m_BattleArea.AddDefenseCard(new CardBox(card, Orientation.Vertical, curTurn.GetHashCode()));
+                        curTurn.GetPlayer().Hand -= card;
+                    }
+                }
+                
+            }
+            else if (0 == m_Players.Count % m_BtnDoneCounter)
+            {
+                m_Gg.lblNum.Content = (m_Rounds[m_Rounds.Count - 1].m_CurrentTurn % 2).ToString();
+                //determine whether they have played a valid sequence of cards
+                
+                //time to tally the results...
+                Turn curTurn = m_Rounds[m_Rounds.Count - 1].GetCurrentTurn();
+                Turn prevTurn = (Turn)curTurn.Clone();
+                prevTurn--;
+                if (prevTurn.GetHand() > curTurn.GetHand())
+                {
+                    MessageBox.Show("Player " + prevTurn.GetPlayer().ID.ToString() + " sucessfully attacked/defended");
+                }
+                else
+                {
+                    MessageBox.Show("Player " + curTurn.GetPlayer().ID.ToString() + " sucessfully attacked/defended");
+                }
+                Timed_Response();
+
+                //setup next round
+                Round rnd = new Round();
+                rnd.Initialize(m_Players);
+                m_Rounds.Add(rnd);
+                m_BtnDoneCounter = 0;
+            }
+            else
+            {
+                //unknown territory
+                //m_Rounds[m_Rounds.Count - 1].m_CurrentTurn++;
+                MessageBox.Show("ERROR: unknown territory");
+            }

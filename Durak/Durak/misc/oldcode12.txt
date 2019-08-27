@@ -1,0 +1,26 @@
+/*int iBase = 0;
+                int iPrevWinner = PlayerPlayOrder();
+
+                if (0 != iPrevWinner)
+                {
+                    iBase++;
+                    Player prevLosingPlayer = null;
+                    foreach (Player player in players)
+                    {
+                        if (player.ID == iPrevWinner)
+                        {
+                            prevLosingPlayer = player;
+                        }
+                    }
+                    Add(new Turn(prevLosingPlayer, HandType.attack, Count));
+                    for (int i = iBase; i < players.Count+1; i++)
+                    {
+                        if (prevLosingPlayer != players[i])
+                        {
+                            Add(new Turn(players[i], (HandType)(i % 2), Count));
+                        }
+                        
+                    }
+                }
+                else
+                {*/

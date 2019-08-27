@@ -1,0 +1,11 @@
+foreach (PlayingCard outerCard in rightTrumps)
+                        {
+                            foreach (PlayingCard innerCard in leftTrumps)
+                            {
+                                if (outerCard > innerCard)
+                                {
+                                    iCounter++;
+                                }
+                            }
+                        }
+                        bRet = (!(iCounter != 0));

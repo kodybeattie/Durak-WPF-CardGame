@@ -1,0 +1,20 @@
+public bool ValidateParams()
+        {
+            bool bRet = true;
+            //if (--deckSize == (int)DeckFlags.Small)
+            //{
+            //    if (numPlayers > 4)
+            //    {
+            //        MessageBoxResult mbResult = MessageBox.Show("Invalid number of players for this deck size, readjusting to 2", "OK", MessageBoxButton.OKCancel);
+            //        if (mbResult == MessageBoxResult.OK)
+            //        {
+            //            NumPlayers = 2;
+            //        }
+            //        else if (mbResult == MessageBoxResult.Cancel)
+            //        {
+            //            bRet = false;
+            //        }
+            //    }
+            //}
+            return bRet;
+        }

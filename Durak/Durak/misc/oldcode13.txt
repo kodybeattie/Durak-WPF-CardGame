@@ -1,0 +1,122 @@
+            //if (!curRound.isDone())
+            //{
+
+            //    if (curRound.Count <= curRound.m_CurrentTurn)//if there aren't enough turns..
+            //    {
+            //        Turn newTurn = curRound.GetCurrentTurn();
+            //        curRound.Add(newTurn++);//adds a new turn automatically
+            //    }
+            //    curRound.m_CurrentTurn++;
+            //    Turn curTurn = curRound.GetCurrentTurn();
+            //    Turn prevTurn = (Turn)curTurn.Clone();
+            //    prevTurn--;
+            //    if (HandType.attack == prevTurn.GetHand().m_Type)
+            //    {//previous turn was attack, so the aspiring player must defend
+            //        if (!bHintHuman)//previous turn was not made bya human
+            //        {
+            //            MessageBox.Show("Your turn");
+            //            DoneWithRound();
+            //        }
+            //        else
+            //        {
+            //            //ai defense
+            //            Hand defendHand = new Hand(HandType.defend);
+            //            //iterate the suits in the previous hand, and find the highest repeating ranks
+            //            int k = GameUtil.getCountMaxRanksInHand(prevTurn.GetHand());
+            //            if (k > 1)//cards with same rank found
+            //            {
+            //                int j = 0;
+            //                for (int i = 0; i >= k; i++)//player must defend against multiple ranks
+            //                {
+            //                    foreach (PlayingCard defenseCard in curTurn.GetPlayer().Hand)
+            //                    {
+            //                        foreach (PlayingCard attackCard in prevTurn.GetHand())
+            //                        {
+            //                            if (defenseCard > attackCard && defendHand.Count() < curTurn.GetHand().Count())
+            //                            {
+            //                                defendHand += defenseCard;
+            //                                j++;
+            //                            }
+            //                        }
+            //                    }
+            //                }
+            //                if (j < k)
+            //                {
+            //                    if (GameUtil.ShallIDoThisForYou("You must enter the same number of ranked cards. Forfeit turn?"))
+            //                    {
+            //                        foreach (PlayingCard attackCard in prevTurn.GetHand())
+            //                        {
+            //                            curTurn.GetPlayer().Hand.Add(attackCard);
+            //                            prevTurn.GetPlayer().Hand.Remove(attackCard);
+            //                        }
+            //                        DoneWithRound();
+            //                    }
+            //                }
+            //            }
+            //            else
+            //            {
+            //                foreach (PlayingCard defenseCard in curTurn.GetPlayer().Hand)
+            //                {
+            //                    foreach (PlayingCard attackCard in prevTurn.GetHand())
+            //                    {
+            //                        if (defenseCard > attackCard && defendHand.Count() < curTurn.GetHand().Count())
+            //                        {
+            //                            defendHand += defenseCard;
+            //                        }
+            //                    }
+            //                }
+            //            }
+            //            curTurn.Defend(defendHand);
+            //            foreach (PlayingCard card in defendHand)
+            //            {
+            //                m_Gg.m_BattleArea.AddDefenseCard(new CardBox(card, Orientation.Vertical, curTurn.GetHashCode()));
+            //                curTurn.GetPlayer().Hand -= card;
+            //            }
+            //            Timed_Response(ResponseType.next_turn);
+            //        }
+            //        m_Rounds[m_Rounds.Count - 1].updateBoldedStatus(curTurn, ref m_Gg);
+            //    }
+            //    else
+            //    {
+            //        if (!bHintHuman)//previous turn was not made bya human
+            //        {
+            //            MessageBox.Show("Your turn");
+            //        }
+            //        else
+            //        {
+            //            //ai attack
+            //            Hand attackHand = new Hand(HandType.attack);
+            //            //iterate the suits in the previous hand, and find the highest repeating ranks
+            //            int k = GameUtil.getCountMaxRanksInHand(curTurn.GetHand());
+            //            if (k > 1)//cards with same rank found
+            //            {
+            //            }
+            //            else
+            //            {
+            //                foreach (PlayingCard attackCard in curTurn.GetPlayer().Hand)
+            //                {
+            //                    foreach (PlayingCard defenseCard in prevTurn.GetHand())
+            //                    {
+            //                        if (attackCard > defenseCard && attackHand.Count() < curTurn.GetHand().Count())
+            //                        {
+            //                            attackHand += defenseCard;
+            //                        }
+            //                    }
+            //                }
+            //            }
+            //            curTurn.Attack(attackHand);
+            //            foreach (PlayingCard card in attackHand)
+            //            {
+            //                m_Gg.m_BattleArea.AddAttackCard(new CardBox(card, Orientation.Vertical, curTurn.GetHashCode()));
+            //                curTurn.GetPlayer().Hand -= card;
+            //            }
+            //            Timed_Response(ResponseType.next_turn);
+            //        }
+            //        m_Rounds[m_Rounds.Count - 1].updateBoldedStatus(curTurn, ref m_Gg);
+            //    }
+            //    if (0 == curTurn.GetPlayer().Hand.Count)//0 means loser
+            //    {
+            //        m_Players.Remove(curTurn.GetPlayer());
+            //    }
+
+            //}

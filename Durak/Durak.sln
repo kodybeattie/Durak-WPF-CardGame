@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetRandom", "GetRandom\GetRandom.csproj", "{8E4C7F94-DFE6-4191-8157-B8C979D75C86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardLib", "CardLib\CardLib.csproj", "{D3E3D503-269F-455A-B2F5-423FCEF0D8F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Durak", "Durak\Durak.csproj", "{979B6264-A21D-4257-B119-57362DD41965}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E4C7F94-DFE6-4191-8157-B8C979D75C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4C7F94-DFE6-4191-8157-B8C979D75C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4C7F94-DFE6-4191-8157-B8C979D75C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4C7F94-DFE6-4191-8157-B8C979D75C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E3D503-269F-455A-B2F5-423FCEF0D8F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E3D503-269F-455A-B2F5-423FCEF0D8F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E3D503-269F-455A-B2F5-423FCEF0D8F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E3D503-269F-455A-B2F5-423FCEF0D8F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979B6264-A21D-4257-B119-57362DD41965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979B6264-A21D-4257-B119-57362DD41965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979B6264-A21D-4257-B119-57362DD41965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979B6264-A21D-4257-B119-57362DD41965}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B234AEC1-0608-4813-AF3C-7327B6175ABB}
+	EndGlobalSection
+EndGlobal

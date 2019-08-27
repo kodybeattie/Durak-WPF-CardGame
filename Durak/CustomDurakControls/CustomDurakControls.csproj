@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C460E1B7-30DD-4B48-B691-3FDF9BDBA1C7}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>CustomDurakControls</RootNamespace>
+    <AssemblyName>CustomDurakControls</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardLib\CardLib.csproj">
+      <Project>{d3e3d503-269f-455a-b2f5-423fcef0d8f3}</Project>
+      <Name>CardLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\ace_club.png" />
+    <Resource Include="images\ace_diamond.png" />
+    <Resource Include="images\ace_heart.png" />
+    <Resource Include="images\ace_spade.png" />
+    <Resource Include="images\back-aqua.png" />
+    <Resource Include="images\back-black.png" />
+    <Resource Include="images\back-blue.png" />
+    <Resource Include="images\back-fuchsia.png" />
+    <Resource Include="images\back-gray.png" />
+    <Resource Include="images\back-green.png" />
+    <Resource Include="images\back-lime.png" />
+    <Resource Include="images\back-maroon.png" />
+    <Resource Include="images\back-navy.png" />
+    <Resource Include="images\back-olive.png" />
+    <Resource Include="images\back-purple.png" />
+    <Resource Include="images\back-red.png" />
+    <Resource Include="images\back-silver.png" />
+    <Resource Include="images\back-teal.png" />
+    <Resource Include="images\back-yellow.png" />
+    <Resource Include="images\back.png" />
+    <Resource Include="images\black_joker.png" />
+    <Resource Include="images\card-base.png" />
+    <Resource Include="images\eight_club.png" />
+    <Resource Include="images\eight_diamond.png" />
+    <Resource Include="images\eight_heart.png" />
+    <Resource Include="images\eight_spade.png" />
+    <Resource Include="images\five_club.png" />
+    <Resource Include="images\five_diamond.png" />
+    <Resource Include="images\five_heart.png" />
+    <Resource Include="images\five_spade.png" />
+    <Resource Include="images\four_diamond.png" />
+    <Resource Include="images\four_heart.png" />
+    <Resource Include="images\four_spade.png" />
+    <Resource Include="images\jack_club.png" />
+    <Resource Include="images\jack_diamond.png" />
+    <Resource Include="images\jack_heart.png" />
+    <Resource Include="images\jack_spade.png" />
+    <Resource Include="images\king_club.png" />
+    <Resource Include="images\king_diamond.png" />
+    <Resource Include="images\king_heart.png" />
+    <Resource Include="images\king_spade.png" />
+    <Resource Include="images\nine_club.png" />
+    <Resource Include="images\nine_diamond.png" />
+    <Resource Include="images\nine_heart.png" />
+    <Resource Include="images\nine_spade.png" />
+    <Resource Include="images\queen_club.png" />
+    <Resource Include="images\queen_diamond.png" />
+    <Resource Include="images\queen_heart.png" />
+    <Resource Include="images\queen_spade.png" />
+    <Resource Include="images\red_joker.png" />
+    <Resource Include="images\seven_club.png" />
+    <Resource Include="images\seven_diamond.png" />
+    <Resource Include="images\seven_heart.png" />
+    <Resource Include="images\seven_spade.png" />
+    <Resource Include="images\six_club.png" />
+    <Resource Include="images\six_diamond.png" />
+    <Resource Include="images\six_heart.png" />
+    <Resource Include="images\six_spade.png" />
+    <Resource Include="images\suit-club.png" />
+    <Resource Include="images\suit-diamond.png" />
+    <Resource Include="images\suit-heart.png" />
+    <Resource Include="images\suit-spade.png" />
+    <Resource Include="images\ten_club.png" />
+    <Resource Include="images\ten_diamond.png" />
+    <Resource Include="images\ten_heart.png" />
+    <Resource Include="images\ten_spade.png" />
+    <Resource Include="images\three_club.png" />
+    <Resource Include="images\three_diamond.png" />
+    <Resource Include="images\three_heart.png" />
+    <Resource Include="images\three_spade.png" />
+    <Resource Include="images\two_club.png" />
+    <Resource Include="images\two_diamond.png" />
+    <Resource Include="images\two_heart.png" />
+    <Resource Include="images\two_spade.png" />
+    <Resource Include="images\four_club.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CardLib.Card" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAEgAAAAAAAABAAAIAAAAQAAAAAAjA=</HashCode>
+      <FileName>Card.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CardLib.CardOutOfRangeException" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CardOutOfRangeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardLib.CardAlreadyInDeckException" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CardOutOfRangeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardLib.PlayingCards" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAkAAQAgACAEgAAAAAEAIAAAAAAAAAANzA=</HashCode>
+      <FileName>Cards.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CardLib.Deck" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABQAAAEAAAQAAQAEAAAMAAAAAJACABAAAAAQAMHA=</HashCode>
+      <FileName>Deck.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CardLib.PlayingCard" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEgACAKgEAABAAAIoAAAAAAAKEBzA=</HashCode>
+      <FileName>PlayingCard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CardLib.Util" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAAABAAAAAAAAgAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CardLib.Properties.Resources" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAHBIcwACAgwAUMUgwJEO0SIwTiAnSQnKBABpEsAKA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CardLib.DeckFlags" Collapsed="true">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAABgAAAAAAAAAIAIAAEEAgA=</HashCode>
+      <FileName>Flags.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CardLib.Rank" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
+      <FileName>Rank.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CardLib.Suit" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAACA=</HashCode>
+      <FileName>Suit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

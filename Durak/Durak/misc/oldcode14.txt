@@ -1,0 +1,68 @@
+public bool isDone()
+        {
+            bool bRet = false;
+            Turn curTurn = GetCurrentTurn();
+            Turn prevTurn = (Turn)curTurn.Clone();
+            prevTurn--;
+            int iPlayerId = curTurn.GetPlayer().ID;
+            int numPlayers = Game.m_Players.Count;
+            try
+            {
+                if ((numPlayers == (numPlayers / iPlayerId)) && (0 == (numPlayers % iPlayerId)))
+                {
+                    bRet = true;
+                    if (prevTurn.GetHand() > curTurn.GetHand())
+                    {
+                        MessageBox.Show("Player " + prevTurn.GetPlayer().ID.ToString() + " (prev turn) sucessfully attacked/defended");
+                        prevTurn.SetLost();
+                        foreach (PlayingCard card in prevTurn.GetHand())
+                        {
+                            curTurn.GetPlayer().Hand.Add(card);
+                            prevTurn.GetPlayer().Hand.Remove(card);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player " + curTurn.GetPlayer().ID.ToString() + " (current turn) sucessfully attacked/defended");
+                        curTurn.SetLost();
+                        foreach (PlayingCard card in curTurn.GetHand())
+                        {
+                            prevTurn.GetPlayer().Hand.Add(card);
+                            curTurn.GetPlayer().Hand.Remove(card);
+                        }
+                    }
+                }
+            }
+            catch (DivideByZeroException ex)
+            {
+                if (iPlayerId == prevTurn.GetPlayer().ID)//only one turn played
+                {
+                    bRet = false;
+                }
+                else
+                {
+                    bRet = true;
+                    if (prevTurn.GetHand() > curTurn.GetHand())
+                    {
+                        MessageBox.Show("Player " + prevTurn.GetPlayer().ID.ToString() + " (prev turn) sucessfully attacked/defended");
+                        prevTurn.SetLost();
+                        foreach (PlayingCard card in prevTurn.GetHand())
+                        {
+                            curTurn.GetPlayer().Hand.Add(card);
+                            prevTurn.GetPlayer().Hand.Remove(card);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Player " + curTurn.GetPlayer().ID.ToString() + " (current turn) sucessfully attacked/defended");
+                        curTurn.SetLost();
+                        foreach (PlayingCard card in curTurn.GetHand())
+                        {
+                            prevTurn.GetPlayer().Hand.Add(card);
+                            curTurn.GetPlayer().Hand.Remove(card);
+                        }
+                    }
+                }
+            }
+            return bRet;
+        }
